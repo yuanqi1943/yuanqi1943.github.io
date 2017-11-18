@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -84,12 +84,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="这是我的blog"><a href="#这是我的blog" class="headerlink" title="这是我的blog"></a>这是我的blog</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123;Router&#125; from <span class="string">'@angular/router'</span></span><br></pre></td></tr></table></figure>
-<p> 这应该是我第一个个人博客</p>
+<p> 这应该是我第一个个人博客<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure></p>
+<p> 一、表单<br>    1、form …<br>    2、input …<br>    3、textarea 控件<br>        标记：<textarea></textarea><br>        属性：<br>            1、name     定义名称，提交给服务器使用<br>            2、cols        指定文本域的列数，变相指定宽<br>            3、rows        指定文本域的行数，变相指定高<br>            4、readonly    只读<br>    4、选项框<br>        1、标记<br>            <select></select><br>            表示 下拉列表 或 滚动列表<br>            <option></option><br>            列表中的内容，允许出现多个<br>        2、属性<br>            1、<select><br>                1、name ：控件的名称<br>        2、size ：默认显示选项的数量，默认为1，为下拉列表，如果取值&gt;1的话，则为滚动列表<br>                3、multiple：设置多选，无值的属性<br>            2、<option><br>                1、value ：选项的值，提交给服务器用<br>                2、selected ：默认被选中<br>    5、其它标记<br>        1、label 元素<br>            作用：关联文本与表单控件的，点击文本时就如同点击表单控件一样<br>            标记：<label>文本</label><br>            属性：<br>        1、for<br>            指定要关联的表单控件的ID值  <label for="””">文本</label><br>        2、为控件分组<br>            <fieldset><br>                <legend>分组标题</legend><br>                分组中的内容<br>            </fieldset><br>        3、浮动框架<br>            1、作用<br>                将其他页面导入到当前页面中来<br>            2、语法<br>                标记：<iframe></iframe><br>                属性：<br>            1、src             要引入的页面的url<br>            2、frameborder    指定浮动框架的边框，默认为1，则显示边框<br>                             不需要边框则设置为 0<br>            3、width   4、height可添加宽高</option></select></p>
+<p>6、新input元素 (HTML5)<br>        1、电子邮件类型<br>            作用：提交时会验证数据是否符合Email的规范<br>            标记：<input type="email"><br>        2、搜索类型<br>            作用：在文本框的基础上，提供了快速清除操作<br>            标记：<input type="search"><br>        3、URL类型<br>            作用：提交时会验证数据是否符合Web站点的URL规范(绝对路径)<br>            标记：<input type="url"><br>        4、电话号码类型<br>            作用：在移动端设备中，能展开 拨号键盘，在PC中无效<br>            标记：<input type="tel"><br>        5、数字类型<br>            作用：只能让用户输入 或 选择数字<br>            标记：<input type="number"><br>            属性：<br>                1、min ：当前控件接受的最小值<br>                2、max ：当前控件接受的最大值<br>                3、step ：微调数字时每次变化的长度,默认为1<br>        6、范围类型<br>            作用：提供一个滑块，让用户选择数字<br>            标记：<input type="range"><br>            属性：<br>                1、min ：当前控件的最小值<br>                2、max ：当前控件的最大值<br>                3、value ：设定初始值<br>        7、颜色类型<br>            作用：提供一个颜色拾取控件<br>            语法：<input type="color"><br>        8、日期类型<br>            作用：提供一个日期输入控件<br>            标记：<input type="date"><br>        9、周类型<br>            作用：提供一个日期控件，用于选取周<br>            标记：<input type="week"><br>        10、月份类型<br>            作用：选取月份控件</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/18/test/" data-id="cja4zghdn00017kjd81cemfik" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/11/18/test/" data-id="cja4zomc50001y4jdy5ctxbl2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -134,7 +136,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/18/hello-world/" data-id="cja4zghdi00007kjdi3tim5j7" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/11/18/hello-world/" data-id="cja4zombj0000y4jdhgeoxyy5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +171,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -194,7 +196,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 yuan qi<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
