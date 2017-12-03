@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="前段基本知识点HTML 对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5 CSS 布局、盒子模型、选择器优先级、Flexbox JS 数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs  其他 移">
 <meta property="og:locale" content="CH">
-<meta property="og:updated_time" content="2017-12-03T09:44:08.799Z">
+<meta property="og:updated_time" content="2017-12-03T09:53:00.007Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端开发知识点">
 <meta name="twitter:description" content="前段基本知识点HTML 对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5 CSS 布局、盒子模型、选择器优先级、Flexbox JS 数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs  其他 移">
@@ -216,26 +216,17 @@
 </ul>
 <p>存储大小：<br>    cookie数据大小不能超过4k。<br>    sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</p>
 <p>有期时间：<br>    localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；<br>    sessionStorage  数据在当前浏览器窗口关闭后自动删除。<br>    cookie          设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭<br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.11">iframe有那些缺点？</h5><p></p>
-<p><em>iframe会阻塞主页面的Onload事件；
-</em>搜索引擎的检索程序无法解读这种页面，不利于SEO;</p>
-<p>*iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。</p>
-<p>使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript<br>动态给iframe添加src属性值，这样可以绕开以上两个问题。<br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.12">Label的作用是什么？是怎么用的？</h5><br>    label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;label for=&quot;Name&quot;&gt;Number:&lt;/label&gt;</span><br><span class="line">&lt;input type=“text“name=&quot;Name&quot; id=&quot;Name&quot;/&gt;</span><br><span class="line">&lt;label&gt;Date:&lt;input type=&quot;text&quot; name=&quot;B&quot;/&gt;&lt;/label&gt;</span><br></pre></td></tr></table></figure><p></p>
-<pre><code> [回到目录](#ms)
- &lt;hr/&gt;
-&lt;h5 id=&quot;1.13&quot;&gt;HTML5的form如何关闭自动完成功能？&lt;/h5&gt;
-给不想要提示的 form 或某个 input 设置为 autocomplete=off。
- [回到目录](#ms)
- &lt;hr/&gt;
-&lt;h5 id=&quot;1.14&quot;&gt;如何实现浏览器内多个标签页之间的通信? (阿里)&lt;/h5&gt;
-`WebSocket`、`SharedWorker`；也可以调用localstorge、cookies等本地存储方式；
-</code></pre><p><code>localstorge</code>另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，<br>我们通过监听事件，控制它的值来进行页面信息通信；<br>注意<code>quirks：Safari</code>在无痕模式下设置<code>localstorge</code>值时会抛出 <code>QuotaExceededError</code> 的异常；<br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.15">webSocket如何兼容低浏览器？(阿里)</h5><br>    <code>Adobe Flash Socket 、
-ActiveX HTMLFile (IE) 、</code><br>基于 <code>multipart</code> 编码发送 <code>XHR</code> 、<br>基于长轮询的 <code>XHR</code><br>     <a href="#ms">回到目录</a><br>     <hr><br>    <h5 id="1.16">页面可见性（Page Visibility API） 可以有哪些用途？</h5><br>    通过 <code>visibilityState</code> 的值检测页面当前是否可见，以及打开网页的时间等;<br>在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放；<br>     <a href="#ms">回到目录</a><br>     <hr><br>    <h5 id="1.17">如何在页面上实现一个圆形的可点击区域？</h5><br>    1、<code>map+area</code>或者<code>svg</code><br>    2、<code>border-radius</code><br>    3、纯js实现 需要求一个点在不在圆上简单算法、获取鼠标坐标等等<br>     <a href="#ms">回到目录</a><br>     <hr><br>    <h5 id="1.18">实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。</h5><br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;height:1px;overflow:hidden;background:red&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><p></p>
-<pre><code> [回到目录](#ms)
- &lt;hr/&gt;
-&lt;h5 id=&quot;1.19&quot;&gt;网页验证码是干嘛的，是为了解决什么安全问题。&lt;/h5&gt;
-区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；
-</code></pre><p>有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试。<br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.20">title与h1的区别、b与strong的区别、i与em的区别？</h5><br>    <code>titl</code>e属性没有明确意义只表示是个标题，<code>H1</code>则表示层次明确的标题，对页面信息的抓取也有很大的影响；<br>    <code>strong</code>是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：<code>&lt;strong&gt;</code>会重读，而<b>是展示强调内容。<br>    <code>i</code>内容展示为斜体，<code>em</code>表示强调的文本；<br><code>Physical Style Elements</code> – 自然样式标签<br><code>b, i, u, s, pre Semantic Style Elements</code> – 语义样式标签<br><code>strong, em, ins, del, code</code>应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签。<br>     <a href="#ms">回到目录</a><br>     <hr><br>      <h5 id="1.21">页面导入样式时，使用link和@import有什么区别？</h5><br>    （1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;<br>    （2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>    （3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;<br>     <a href="#ms">回到目录</a><br>     <hr><p></p>
-</b>
+<p>iframe会阻塞主页面的Onload事件；<br>搜索引擎的检索程序无法解读这种页面，不利于SEO;<br>iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。<br>使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript<br>动态给iframe添加src属性值，这样可以绕开以上两个问题。<br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.12">Label的作用是什么？是怎么用的？</h5><br>    label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">   &lt;label for=&quot;Name&quot;&gt;Number:&lt;/label&gt;</span><br><span class="line">   &lt;input type=“text“name=&quot;Name&quot; id=&quot;Name&quot;/&gt;</span><br><span class="line">   &lt;label&gt;Date:&lt;input type=&quot;text&quot; name=&quot;B&quot;/&gt;</span><br><span class="line">   &lt;/label&gt; ``` </span><br><span class="line"></span><br><span class="line">   [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.13&quot;&gt;HTML5的form如何关闭自动完成功能？&lt;/h5&gt;</span><br><span class="line">    给不想要提示的 form 或某个 input 设置为 autocomplete=off。</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.14&quot;&gt;如何实现浏览器内多个标签页之间的通信? (阿里)&lt;/h5&gt;</span><br><span class="line">    `WebSocket`、`SharedWorker`；也可以调用localstorge、cookies等本地存储方式；</span><br><span class="line">`localstorge`另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，</span><br><span class="line">我们通过监听事件，控制它的值来进行页面信息通信；</span><br><span class="line">注意`quirks：Safari `在无痕模式下设置`localstorge`值时会抛出 `QuotaExceededError` 的异常；</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.15&quot;&gt;webSocket如何兼容低浏览器？(阿里)&lt;/h5&gt;</span><br><span class="line">    `Adobe Flash Socket 、</span><br><span class="line">ActiveX HTMLFile (IE) 、`</span><br><span class="line">基于 `multipart` 编码发送 `XHR` 、</span><br><span class="line">基于长轮询的 `XHR`</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.16&quot;&gt;页面可见性（Page Visibility API） 可以有哪些用途？&lt;/h5&gt;</span><br><span class="line">    通过 `visibilityState` 的值检测页面当前是否可见，以及打开网页的时间等;</span><br><span class="line">在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放；</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.17&quot;&gt;如何在页面上实现一个圆形的可点击区域？&lt;/h5&gt;</span><br><span class="line">    1、`map+area`或者`svg`</span><br><span class="line">    2、`border-radius`</span><br><span class="line">    3、纯js实现 需要求一个点在不在圆上简单算法、获取鼠标坐标等等</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.18&quot;&gt;实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。&lt;/h5&gt;</span><br></pre></td></tr></table></figure><p></p>
+<p>   <div style="height:1px;overflow:hidden;background:red"></div><br>   <code>``
+     [回到目录](#ms)
+     &lt;hr/&gt;
+    &lt;h5 id=&quot;1.19&quot;&gt;网页验证码是干嘛的，是为了解决什么安全问题。&lt;/h5&gt;
+    区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；
+有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试。
+     [回到目录](#ms)
+     &lt;hr/&gt;
+    &lt;h5 id=&quot;1.20&quot;&gt;title与h1的区别、b与strong的区别、i与em的区别？&lt;/h5&gt;</code>titl<code>e属性没有明确意义只表示是个标题，</code>H1<code>则表示层次明确的标题，对页面信息的抓取也有很大的影响；</code>strong<code>是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：</code><strong><code>会重读，而</code><b><code>是展示强调内容。</code>i<code>内容展示为斜体，</code>em<code>表示强调的文本；</code>Physical Style Elements<code>-自然样式标签</code>b, i, u, s, pre Semantic Style Elements<code>- 语义样式标签</code>strong, em, ins, del, code`应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签。<br>     <a href="#ms">回到目录</a><br>     <hr><br>      <h5 id="1.21">页面导入样式时，使用link和@import有什么区别？</h5><br>    （1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;<br>    （2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>    （3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;<br>     <a href="#ms">回到目录</a><br>     <hr></b></strong></p>
+
       
 
       
@@ -328,15 +319,11 @@ ActiveX HTMLFile (IE) 、</code><br>基于 <code>multipart</code> 编码发送 <
   
 <nav id="article-nav">
   
-    <a href="/2017/11/18/web/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          如何制作一份简历
-        
-      </div>
-    </a>
   
+    <a href="/2017/11/18/web/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何制作一份简历</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
