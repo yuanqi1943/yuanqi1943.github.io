@@ -5,12 +5,12 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="http://yuanqi1943.github.io">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yuanqi1943.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="CH">
 <meta name="twitter:card" content="summary">
@@ -146,19 +146,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-webContent" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-htmlms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/webContent/">前端开发知识点</a>
+      <a class="article-title" href="/2017/11/18/htmlms/">HTML面试题</a>
     </h1>
   
 
         
-        <a href="/2017/11/18/webContent/" class="archive-article-date">
+        <a href="/2017/11/18/htmlms/" class="archive-article-date">
   	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
 </a>
         
@@ -166,14 +166,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前段基本知识点"><a href="#前段基本知识点" class="headerlink" title="前段基本知识点"></a>前段基本知识点</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p> 对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5</p>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p> 布局、盒子模型、选择器优先级、Flexbox</p>
-<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><p> 数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs </p>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p> 移动端、响应式、自动化构建、HTTP、离线存储、WEB安全、优化、重构、团队协作、可维护、易用性、SEO、UED、架构、职业生涯、快速学习能力</p>
-<p></p><h2 id="ms"> 面试题</h2> <p></p>
+        <p></p><h2 id="ms"> 面试题</h2><p></p>
 <ul>
-<li><p><a href="#1">1.HTML面试题</a></p>
-<ul>
+<li><a href="#1">1.HTML面试题</a><ul>
 <li><a href="#1.1">1.1Doctype作用？标准模式与兼容模式各有什么区别?</a></li>
 <li><a href="#1.2">1.2HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？</a></li>
 <li><a href="#1.3">1.3行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</a></li>
@@ -196,34 +191,183 @@
 <li><a href="#1.20">1.20title与h1的区别、b与strong的区别、i与em的区别？</a></li>
 <li><a href="#1.21">1.21页面导入样式时，使用link和@import有什么区别？</a></li>
 </ul>
-<p></p><h4 id="1">HTML面试题<br><h5 id="1.1">Doctype作用？标准模式与兼容模式各有什么区别?</h5><br>（1）&lt;!DOCTYPE&gt;声明位于位于HTML文档中的第一行，处于 <html> 标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。<br>（2）标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。<br>   <a href="#ms">回到目录</a><br> <hr><br><h5 id="1.2">HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？</h5><br> HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）；而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。<br>   <a href="#ms">回到目录</a><br>   <hr><br><h5 id="1.3">行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h5><br> 首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。<br>（1）行内元素有：a b span img input select strong（强调的语气）<br>（2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p<br>（3）常见的空元素：<p></p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br&gt; &lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt;</span><br></pre></td></tr></table></figure>
-<p>  鲜为人知的是：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;area&gt; &lt;base&gt; &lt;col&gt; &lt;command&gt; &lt;embed&gt; &lt;keygen&gt; &lt;param&gt; &lt;source&gt; &lt;track&gt; &lt;wbr&gt;</span><br></pre></td></tr></table></figure>
-<p>   <a href="#ms">回到目录</a><br>  <hr><br>  </p><h5 id="1.4">介绍一下你对浏览器内核的理解？</h5><br>  主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。<br>  渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。<br>  JS引擎则：解析和执行javascript来实现网页的动态效果。<br>  最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。<br>   <a href="#ms">回到目录</a><br>   <hr><br>  <h5 id="1.5">常见的浏览器内核有哪些？</h5><br>  Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]<br>  Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等<br>  Presto内核：Opera7及以上。      [Opera内核原为：Presto，现为：Blink;]<br>  Webkit内核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）]<br>   <a href="#ms">回到目录</a><br>   <hr><br>  <h5 id="1.6">html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？</h5><p></p>
-<ul>
-<li>HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。<br>绘画 canvas;<br>用于媒介回放的 video 和 audio 元素;<br>本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;<br>sessionStorage 的数据在浏览器关闭后自动删除;<br>语意化更好的内容元素，比如 article、footer、header、nav、section;<br>表单控件，calendar、date、time、email、url、search;<br>新的技术webworker, websocket, Geolocation;<br>移除的元素：<br>纯表现的元素：basefont，big，center，font, s，strike，tt，u;<br>对可用性产生负面影响的元素：frame，frameset，noframes；</li>
-<li><p>支持HTML5新标签：<br>IE8/IE7/IE6支持通过document.createElement方法产生的标签，<br>可以利用这一特性让这些浏览器支持HTML5新标签，<br>浏览器支持新标签后，还需要添加标签默认的样式。</p>
-<p>当然也可以直接使用成熟的框架、比如html5shim;</p>
-<!--[if lt IE 9]>
-  <script> src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"</script>
-<![endif]--></li>
+</li>
 </ul>
-</html></h4></li>
-<li>如何区分HTML5： DOCTYPE声明\新增的结构元素\功能元素<br>   <a href="#ms">回到目录</a><br>   <hr><br>  <h5 id="1.7">简述一下你对HTML语义化的理解？</h5><br>  用正确的标签做正确的事情。<br>html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;<br>即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的;<br>搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO;<br>使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。<br>   <a href="#ms">回到目录</a><br>   <hr><br>  <h5 id="1.8">HTML5的离线储存怎么使用，工作原理能不能解释一下？</h5><br>  在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。<br>原理：HTML5的离线存储是基于一个新建的.appcache文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。<br>如何使用：<br>1、页面头部像下面一样加入一个manifest的属性；<br>2、在cache.manifest文件的编写离线存储的资源；<br>  CACHE MANIFEST<br>  #v0.11<br>  CACHE:<br>  js/app.js<br>  css/style.css<br>  NETWORK:<br>  resourse/logo.png<br>  FALLBACK:<br>  / /offline.html<br>3、在离线状态时，操作window.applicationCache进行需求实现。<br>   <a href="#ms">回到目录</a><br>   <hr><br>  <h5 id="1.9">浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？</h5><br>  在线的情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。<br>离线的情况下，浏览器就直接使用离线存储的资源。<br>   <a href="#ms">回到目录</a><br>   <hr><br>  <h5 id="1.10">请描述一下 cookies，sessionStorage 和 localStorage 的区别？</h5><br>  cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。<br>cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。<br>sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。</li>
-</ul>
+<p> </p><h4 id="1">HTML面试题<br> <h5 id="1.1">Doctype作用？标准模式与兼容模式各有什么区别?</h5><br>  （1）<code>&lt;!DOCTYPE&gt;</code>声明位于位于HTML文档中的第一行，处于 <code>&lt;html&gt;</code> 标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。<br>  （2）标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。<br>     <a href="#ms">回到目录</a><br>   <hr><br> <h5 id="1.2">HTML5 为什么只需要写 <code>&lt;!DOCTYPE HTML&gt;</code>？</h5><br>   HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）；而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。<br>     <a href="#ms">回到目录</a><br>     <hr><br> <h5 id="1.3">行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h5><br>   首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。<br>（1）行内元素有：<code>a b span img input select strong</code>（强调的语气）<br>（2）块级元素有：<code>div ul ol li dl dt dd h1 h2 h3 h4…p</code><br>（3）常见的空元素：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br&gt; &lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt;</span><br></pre></td></tr></table></figure><p></p>
+<pre><code>鲜为人知的是：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;area&gt; &lt;base&gt; &lt;col&gt; &lt;command&gt; &lt;embed&gt; &lt;keygen&gt; &lt;param&gt; &lt;source&gt; &lt;track&gt; &lt;wbr&gt;</span><br></pre></td></tr></table></figure>
+
+ [回到目录](#ms)
+&lt;hr/&gt;
+&lt;h5 id=&quot;1.4&quot;&gt;介绍一下你对浏览器内核的理解？&lt;/h5&gt;
+主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。
+渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。
+JS引擎则：解析和执行javascript来实现网页的动态效果。
+最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。
+ [回到目录](#ms)
+ &lt;hr/&gt;
+&lt;h5 id=&quot;1.5&quot;&gt;常见的浏览器内核有哪些？&lt;/h5&gt;
+Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]
+Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等
+Presto内核：Opera7及以上。      [Opera内核原为：Presto，现为：Blink;]
+Webkit内核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）]
+ [回到目录](#ms)
+ &lt;hr/&gt;
+&lt;h5 id=&quot;1.6&quot;&gt;html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？&lt;/h5&gt;
+ HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
+  绘画 canvas;
+  用于媒介回放的 video 和 audio 元素;
+  本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;
+  sessionStorage 的数据在浏览器关闭后自动删除;
+  语意化更好的内容元素，比如 article、footer、header、nav、section;
+  表单控件，calendar、date、time、email、url、search;
+  新的技术webworker, websocket, Geolocation;
+移除的元素：
+  纯表现的元素：basefont，big，center，font, s，strike，tt，u;
+  对可用性产生负面影响的元素：frame，frameset，noframes；
+ 支持HTML5新标签：
+ IE8/IE7/IE6支持通过document.createElement方法产生的标签，
+ 可以利用这一特性让这些浏览器支持HTML5新标签，
+ 浏览器支持新标签后，还需要添加标签默认的样式。
+
+ 当然也可以直接使用成熟的框架、比如html5shim;
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--[if lt IE 9]&gt;</span><br><span class="line">   &lt;script&gt; src=&quot;//cdn.bootcss.com/html5shiv/r29/html5.min.js&quot;&lt;/script&gt;</span><br><span class="line">&lt;![endif]--&gt;</span><br></pre></td></tr></table></figure>
+</code></pre><p>  如何区分HTML5： DOCTYPE声明\新增的结构元素\功能元素<br>     <a href="#ms">回到目录</a><hr><br>    </p><h5 id="1.7">简述一下你对HTML语义化的理解？</h5><br>    用正确的标签做正确的事情。<br>  html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;<br>即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的;<br>搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO;<br>使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。<br>     <a href="#ms">回到目录</a><br>     <hr><br>    <h5 id="1.8">HTML5的离线储存怎么使用，工作原理能不能解释一下？</h5><br>    在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。<br>原理：HTML5的离线存储是基于一个新建的.appcache文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。<br>如何使用：<br>1、页面头部像下面一样加入一个manifest的属性；<br>2、在cache.manifest文件的编写离线存储的资源；<br>    CACHE MANIFEST<p></p>
+<pre><code>#v0.11
+CACHE:
+js/app.js
+css/style.css
+NETWORK:
+resourse/logo.png
+FALLBACK:
+/ /offline.html
+</code></pre><p>3、在离线状态时，操作window.applicationCache进行需求实现。<br>     <a href="https://segmentfault.com/a/1190000000732617" target="_blank" rel="noopener">有趣的离线储存</a><br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.9">浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？</h5><br>    在线的情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。<br>离线的情况下，浏览器就直接使用离线存储的资源。<br>     <a href="#ms">回到目录</a><br>     <hr><br>    <h5 id="1.10">请描述一下 cookies，sessionStorage 和 localStorage 的区别？</h5><br>    cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。<br>cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。<br>sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。<p></p>
 <p>存储大小：<br>    cookie数据大小不能超过4k。<br>    sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</p>
 <p>有期时间：<br>    localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；<br>    sessionStorage  数据在当前浏览器窗口关闭后自动删除。<br>    cookie          设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭<br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.11">iframe有那些缺点？</h5><p></p>
-<p>iframe会阻塞主页面的Onload事件；<br>搜索引擎的检索程序无法解读这种页面，不利于SEO;<br>iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。<br>使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript<br>动态给iframe添加src属性值，这样可以绕开以上两个问题。<br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.12">Label的作用是什么？是怎么用的？</h5><br>    label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">   &lt;label for=&quot;Name&quot;&gt;Number:&lt;/label&gt;</span><br><span class="line">   &lt;input type=“text“name=&quot;Name&quot; id=&quot;Name&quot;/&gt;</span><br><span class="line">   &lt;label&gt;Date:&lt;input type=&quot;text&quot; name=&quot;B&quot;/&gt;</span><br><span class="line">   &lt;/label&gt; ``` </span><br><span class="line"></span><br><span class="line">   [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.13&quot;&gt;HTML5的form如何关闭自动完成功能？&lt;/h5&gt;</span><br><span class="line">    给不想要提示的 form 或某个 input 设置为 autocomplete=off。</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.14&quot;&gt;如何实现浏览器内多个标签页之间的通信? (阿里)&lt;/h5&gt;</span><br><span class="line">    `WebSocket`、`SharedWorker`；也可以调用localstorge、cookies等本地存储方式；</span><br><span class="line">`localstorge`另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，</span><br><span class="line">我们通过监听事件，控制它的值来进行页面信息通信；</span><br><span class="line">注意`quirks：Safari `在无痕模式下设置`localstorge`值时会抛出 `QuotaExceededError` 的异常；</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.15&quot;&gt;webSocket如何兼容低浏览器？(阿里)&lt;/h5&gt;</span><br><span class="line">    `Adobe Flash Socket 、</span><br><span class="line">ActiveX HTMLFile (IE) 、`</span><br><span class="line">基于 `multipart` 编码发送 `XHR` 、</span><br><span class="line">基于长轮询的 `XHR`</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.16&quot;&gt;页面可见性（Page Visibility API） 可以有哪些用途？&lt;/h5&gt;</span><br><span class="line">    通过 `visibilityState` 的值检测页面当前是否可见，以及打开网页的时间等;</span><br><span class="line">在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放；</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.17&quot;&gt;如何在页面上实现一个圆形的可点击区域？&lt;/h5&gt;</span><br><span class="line">    1、`map+area`或者`svg`</span><br><span class="line">    2、`border-radius`</span><br><span class="line">    3、纯js实现 需要求一个点在不在圆上简单算法、获取鼠标坐标等等</span><br><span class="line">     [回到目录](#ms)</span><br><span class="line">     &lt;hr/&gt;</span><br><span class="line">    &lt;h5 id=&quot;1.18&quot;&gt;实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。&lt;/h5&gt;</span><br></pre></td></tr></table></figure><p></p>
-<p>   <div style="height:1px;overflow:hidden;background:red"></div><br>   <code>``
+<p>iframe会阻塞主页面的Onload事件；<br>搜索引擎的检索程序无法解读这种页面，不利于SEO;<br>iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。<br>使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript<br>动态给iframe添加src属性值，这样可以绕开以上两个问题。<br>     <a href="#ms">回到目录</a><br>     <hr><br>    </p><h5 id="1.12">Label的作用是什么？是怎么用的？</h5><br>    label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。<br>  ` <label for="Name">Number:</label><p></p>
+   <input type="“text“name="Name"" id="Name">
+
+<p>   <label>Date:<input type="text" name="B"></label></p>
+<p>    <code>[回到目录](#ms)
+     &lt;hr/&gt;
+    &lt;h5 id=&quot;1.13&quot;&gt;HTML5的form如何关闭自动完成功能？&lt;/h5&gt;
+    给不想要提示的 form 或某个 input 设置为 autocomplete=off。
      [回到目录](#ms)
+     &lt;hr/&gt;
+    &lt;h5 id=&quot;1.14&quot;&gt;如何实现浏览器内多个标签页之间的通信? (阿里)&lt;/h5&gt;</code>WebSocket<code>、</code>SharedWorker<code>；也可以调用localstorge、cookies等本地存储方式；</code>localstorge<code>另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，
+我们通过监听事件，控制它的值来进行页面信息通信；
+注意</code>quirks：Safari <code>在无痕模式下设置</code>localstorge<code>值时会抛出</code>QuotaExceededError<code>的异常；
+     [回到目录](#ms)
+     &lt;hr/&gt;
+    &lt;h5 id=&quot;1.15&quot;&gt;webSocket如何兼容低浏览器？(阿里)&lt;/h5&gt;</code>Adobe Flash Socket 、<br>ActiveX HTMLFile (IE) 、<code>基于</code>multipart<code>编码发送</code>XHR<code>、
+基于长轮询的</code>XHR<code>[回到目录](#ms)
+     &lt;hr/&gt;
+    &lt;h5 id=&quot;1.16&quot;&gt;页面可见性（Page Visibility API） 可以有哪些用途？&lt;/h5&gt;
+    通过</code>visibilityState<code>的值检测页面当前是否可见，以及打开网页的时间等;
+在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放；
+     [回到目录](#ms)
+     &lt;hr/&gt;
+    &lt;h5 id=&quot;1.17&quot;&gt;如何在页面上实现一个圆形的可点击区域？&lt;/h5&gt;
+    1、</code>map+area<code>或者</code>svg<code>2、</code>border-radius<code>3、纯js实现 需要求一个点在不在圆上简单算法、获取鼠标坐标等等
+     [回到目录](#ms)
+     &lt;hr/&gt;
+    &lt;h5 id=&quot;1.18&quot;&gt;实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。&lt;/h5&gt;</code> <div style="height:1px;overflow:hidden;background:red"></div><code>[回到目录](#ms)
      &lt;hr/&gt;
     &lt;h5 id=&quot;1.19&quot;&gt;网页验证码是干嘛的，是为了解决什么安全问题。&lt;/h5&gt;
     区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；
 有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试。
      [回到目录](#ms)
      &lt;hr/&gt;
-    &lt;h5 id=&quot;1.20&quot;&gt;title与h1的区别、b与strong的区别、i与em的区别？&lt;/h5&gt;</code>titl<code>e属性没有明确意义只表示是个标题，</code>H1<code>则表示层次明确的标题，对页面信息的抓取也有很大的影响；</code>strong<code>是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：</code><strong><code>会重读，而</code><b><code>是展示强调内容。</code>i<code>内容展示为斜体，</code>em<code>表示强调的文本；</code>Physical Style Elements<code>-自然样式标签</code>b, i, u, s, pre Semantic Style Elements<code>- 语义样式标签</code>strong, em, ins, del, code`应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签。<br>     <a href="#ms">回到目录</a><br>     <hr><br>      <h5 id="1.21">页面导入样式时，使用link和@import有什么区别？</h5><br>    （1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;<br>    （2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>    （3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;<br>     <a href="#ms">回到目录</a><br>     <hr></b></strong></p>
+    &lt;h5 id=&quot;1.20&quot;&gt;title与h1的区别、b与strong的区别、i与em的区别？&lt;/h5&gt;</code>title<code>属性没有明确意义只表示是个标题，</code>H1<code>则表示层次明确的标题，对页面信息的抓取也有很大的影响；</code>strong<code>是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：</code><strong><code>会重读，而</code><b><code>是展示强调内容。</code>i<code>内容展示为斜体，</code>em<code>表示强调的文本；</code>Physical Style Elements<code>-自然样式标签</code>b, i, u, s, pre Semantic Style Elements<code>- 语义样式标签</code>strong, em, ins, del, code`应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签。<br>     <a href="#ms">回到目录</a><br>     <hr><br>      <h5 id="1.21">页面导入样式时，使用link和@import有什么区别？</h5><br>    （1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;<br>    （2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>    （3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;<br>     <a href="#ms">回到目录</a><br>     <hr></b></strong></p>
+</h4>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-interview</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/18/htmlms/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-jsms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/18/jsms/">JavaScript面试题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/18/jsms/" class="archive-article-date">
+  	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em><a href="#3">3.JavaScript</a>
+ </em><a href="#3.1">3.1介绍js的基本数据类型</a><br> <em><a href="#3.2">3.2介绍js有哪些内置对象？</a>
+ </em><a href="#3.3">3.3说几条写JavaScript的基本规范？</a><br> <em><a href="#3.4">3.4JavaScript原型，原型链 ? 有什么特点？</a>
+ </em><a href="#3.5">3.5JavaScript有几种类型的值？，你能画一下他们的内存图吗？</a><br> <em><a href="#3.6">3.6Javascript如何实现继承？</a>
+ </em><a href="#3.7">3.7JavaScript继承的几种实现方式？</a><br> <em><a href="#3.8">3.8javascript创建对象的几种方式？</a>
+ </em><a href="#3.9">3.9javascript作用链域?</a><br> <em><a href="#3.10">3.10谈谈This对象的理解。</a>
+ </em><a href="#3.11">3.11eval是做什么的？</a><br> <em><a href="#3.12">3.12什么是window对象? 什么是document对象?</a>
+ </em><a href="#3.13">3.13null，undefined 的区别？</a><br> <em><a href="#3.14">3.14写一个通用的事件侦听器函数</a>
+ </em><a href="#3.15">3.15[“1”, “2”, “3”].map(parseInt) 答案是多少？</a><br> <em><a href="#3.16">3.16事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</a>
+ </em><a href="#3.17">3.17什么是闭包（closure），为什么要用它？</a><br> <em><a href="#3.18">3.18javascript 代码中的”use strict”;是什么意思 ? 使用它区别是什么？</a>
+ </em><a href="#3.19">3.19如何判断一个对象是否属于某个类？</a><br> <em><a href="#3.20">3.20new操作符具体干了什么呢?</a>
+ </em><a href="#3.21">3.21用原生JavaScript的实现过什么功能吗？</a><br> <em><a href="#3.22">3.22Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？</a>
+ </em><a href="#3.23">3.23JSON 的了解？</a><br> <em><a href="#3.24">3.24Ajax 是什么? 如何创建一个Ajax？</a>
+ </em><a href="#3.25">3.25同步和异步的区别?</a><br> <em><a href="#3.26">3.26如何解决跨域问题?</a>
+ </em><a href="#3.27">3.27页面编码和被请求的资源编码如果不一致如何处理？</a><br> <em><a href="#3.28">3.28模块化开发怎么做？</a>
+ </em><a href="#3.29">3.29AMD（Modules/Asynchronous-Definition）、CMD（Common Module Definition）规范区别？</a></p>
 
       
 
@@ -232,11 +376,267 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-interview</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/18/jsms/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-webContent" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/18/webContent/">前端开发知识点</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/18/webContent/" class="archive-article-date">
+  	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前段基本知识点"><a href="#前段基本知识点" class="headerlink" title="前段基本知识点"></a>前段基本知识点</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p> 对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5</p>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p> 布局、盒子模型、选择器优先级、Flexbox</p>
+<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><p> 数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs<br>
+        
+          <a class="article-more-a" href="/2017/11/18/webContent/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-subject</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/11/18/webContent/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-cssms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/18/cssms/">CSS面试题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/18/cssms/" class="archive-article-date">
+  	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p><a href="#2">2.CSS面试题</a></p>
+<ul>
+<li><a href="#2.1">2.1介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</a></li>
+<li><a href="#2.2">2.2CSS选择符有哪些？哪些属性可以继承？</a></li>
+<li><a href="#2.3">2.3CSS优先级算法如何计算？</a></li>
+<li><a href="#2.4">2.4CSS3新增伪类有那些？</a></li>
+<li><a href="#2.5">2.5如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？</a></li>
+<li><a href="#2.6">2.6display有哪些值？说明他们的作用。</a></li>
+<li><a href="#2.7">2.7position的值relative和absolute定位原点是？</a></li>
+<li><a href="#2.8">2.8CSS3有哪些新特性？</a></li>
+<li><a href="#2.9">2.9请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</a></li>
+<li><a href="#2.10">2.10用纯CSS创建一个三角形的原理是什么？</a></li>
+<li><a href="#2.11">2.11一个满屏 品 字布局 如何设计?</a></li>
+<li><a href="#2.12">2.12经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？</a></li>
+<li><a href="#2.13">2.13li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</a></li>
+<li><a href="#2.14">2.14为什么要初始化CSS样式,如何初始化？</a></li>
+<li><a href="#2.15">2.15absolute的containing block(容器块)计算方式跟正常流有什么不同？</a></li>
+<li><a href="#2.16">2.16CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</a></li>
+<li><a href="#2.17">2.17position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</a></li>
+<li><a href="#2.18">2.18对BFC规范(块级格式化上下文：block formatting context)的理解？</a></li>
+<li><a href="#2.19">2.19css定义的权重</a></li>
+<li><a href="#2.20">2.20请解释一下为什么会出现浮动和什么时候需要清除浮动？清除浮动的方式</a></li>
+<li><a href="#2.21">2.21移动端的布局用过媒体查询吗？</a></li>
+<li><a href="#2.22">2.22使用 CSS 预处理器吗？喜欢那个？</a></li>
+<li><a href="#2.23">2.23CSS优化、提高性能的方法有哪些？</a></li>
+<li><a href="#2.24">2.24浏览器是怎样解析CSS选择器的？</a></li>
+<li><a href="#2.25">2.25在网页中的应该使用奇数还是偶数的字体？为什么呢？</a></li>
+<li><a href="#2.26">2.26margin和padding分别适合什么场景使用？</a></li>
+<li><a href="#2.27">2.27抽离样式模块怎么写，说出思路，有无实践经验？[阿里航旅的面试题]</a></li>
+<li><a href="#2.28">2.28元素竖向的百分比设定是相对于容器的高度吗？</a></li>
+<li><a href="#2.29">2.29全屏滚动的原理是什么？用到了CSS的那些属性？</a></li>
+<li><a href="#2.30">2.30什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？</a></li>
+</ul>
+<p></p><h5 id="2.1">介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</h5><br>（1）有两种， IE 盒子模型、W3C 盒子模型；<br>（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；<br>（3）区  别： IE的content部分把 border 和 padding计算了进去;<br>   <a href="#2">回到目录</a><br> <hr><br><h5 id="2.2">CSS选择符有哪些？哪些属性可以继承？</h5><br>  1.id选择器<code>（# myid）</code><br>  2.类选择器<code>（.myclassname）</code><br>  3.标签选择器<code>（div, h1, p）</code><br>  4.相邻选择器<code>（h1 + p）</code><br>  5.子选择器<code>（ul &gt; li）</code><br>  6.后代选择器<code>（li a）</code><br>  7.通配符选择器<code>（ * ）</code><br>  8.属性选择器<code>（a[rel = &quot;external&quot;]）</code><br>  9.伪类选择器<code>（a:hover, li:nth-child）</code><p></p>
+<p> 可继承的样式：<code>font-size font-family color, UL LI DL DD DT</code>;</p>
+<p> 不可继承的样式：<code>border padding margin width height</code> ;<br>   <a href="#2">回到目录</a><br> <hr><br></p><h5 id="2.3">CSS优先级算法如何计算？</h5><br> 优先级就近原则，同权重情况下样式定义最近者为准;<p></p>
+<p> 载入样式以最后载入的定位为准;</p>
+</li>
+</ul>
+<p>优先级为:<br>   !important &gt;  id &gt; class &gt; tag<br>    important 比 内联优先级高<br>     <a href="#2">回到目录</a><br>   <hr><br> </p><h5 id="2.4">CSS3新增伪类有那些？</h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.5"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.6"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.7"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.8"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.9"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.10"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.11"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.12"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.13"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.14"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.15"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.16"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.17"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.18"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.19"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.20"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.20"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.21"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.22"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.23"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.24"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.25"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.26"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.27"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.28"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.29"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre>   <hr>     
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-interview</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/18/cssms/">展开全文 >></a>
         </p>
       
 
@@ -290,155 +690,10 @@
 <ul>
 <li>Feature：是什么</li>
 <li>Advantage：比别人好在哪些地方</li>
-<li>Benefit：如果雇佣你，招聘方会得到什么好处 </li>
-</ul>
-<p>其次，写简历和写议论文不同，过分的论证会显得自夸，反而容易引起反感，所以要点到为止。这里的技巧是，提供论据，把论点留给阅读简历的人自己去得出。放论据要具体，最基本的是要数字化，好的论据要让人印象深刻。</p>
-<p>举个例子，下边内容是虚构的：</p>
-<p>2006年，我参与了手机XX网发布系统WAPCMS的开发（<code>这部分是大家都会写的</code>）。作为核心程序员，我不但完成了网站界面、调度队列的开发工作，更提出了高效的组件级缓存系统，通过碎片化缓冲有效的提升了系统的渲染效率。（<code>这部分是很多同学忘掉的，要写出你在这个项目中具体负责的部分，以及你贡献出来的价值。</code>）在该系统上线后，Web前端性能从10QPS提升到200QPS，服务器由10台减少到3台（<code>通过量化的数字来增强可信度</code>）。2008年我升任WAPCMS项目负责人，带领一个3人小组支持着每天超过2亿的PV（<code>这就是Benefit。你能带给前雇主的价值，也就是你能带给新雇主的价值。</code>）。</p>
-<p>有同学问，如果我在项目里边没有那么显赫的成绩可以说怎么办？讲不出成绩时，就讲你的成长。因为学习能力也是每家公司都看中的东西。你可以写你在这个项目里边遇到了一个什么样的问题，别人怎么解决的，你怎么解决的，你的方案好在什么地方，最终这个方案的效果如何。</p>
-<p>具体、量化、有说服力，是技术简历特别需要注重的地方。</p>
-<hr>
-<h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><ul>
-<li>手机：135<strong><em>**</em></strong> （<code>如果是外地手机，可注明。如经常关机，要写上最优联系时间</code>）</li>
-<li>Email：goodman@gmail.com （<code>虽然我觉得QQ邮箱无所谓，不过有些技术人员比较反感，建议用G</code>）</li>
-<li>QQ/微信号：6<strong><em>*</em></strong>（<code>提供一个通过网络可以联系到你的方式</code>）</li>
-</ul>
-<hr>
-<h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><ul>
-<li>胶布帝/男/1990 </li>
-<li>本科/萌鹿大学计算机系 </li>
-<li>工作年限：3年</li>
-<li>微博：<a href="http://weibo.com/jobdeer" target="_blank" rel="noopener">@JobDeer</a> （<code>如果没有技术相关内容，也可以不放</code>）</li>
-<li>技术博客：<a href="http://blog.github.io" target="_blank" rel="noopener">http://blog.github.io</a> ( <code>使用GitHub Host的Big较高</code>  )</li>
-<li><p>Github：<a href="http://github.com/geekcompany" target="_blank" rel="noopener">http://github.com/geekcompany</a> ( <code>有原创repo的Github帐号会极大的提升你的个人品牌</code>  )</p>
-</li>
-<li><p>期望职位：Web前端高级程序员，应用架构师</p>
-</li>
-<li>期望薪资：税前月薪15k~20k，特别喜欢的公司可例外</li>
-<li>期望城市：北京</li>
-</ul>
-<hr>
-<h1 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h1><p>（工作经历按逆序排列，最新的在最前边，按公司做一级分组，公司内按二级分组）</p>
-<h2 id="ABC公司-（-2012年9月-2014年9月-）"><a href="#ABC公司-（-2012年9月-2014年9月-）" class="headerlink" title="ABC公司 （ 2012年9月 ~ 2014年9月 ）"></a>ABC公司 （ 2012年9月 ~ 2014年9月 ）</h2><h3 id="DEF项目"><a href="#DEF项目" class="headerlink" title="DEF项目"></a>DEF项目</h3><p>我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。</p>
-<h3 id="GHI项目"><a href="#GHI项目" class="headerlink" title="GHI项目"></a>GHI项目</h3><p>我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。</p>
-<h3 id="其他项目"><a href="#其他项目" class="headerlink" title="其他项目"></a>其他项目</h3><p>（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）</p>
-<h2 id="JKL公司-（-2010年3月-2012年8月-）"><a href="#JKL公司-（-2010年3月-2012年8月-）" class="headerlink" title="JKL公司 （ 2010年3月 ~ 2012年8月 ）"></a>JKL公司 （ 2010年3月 ~ 2012年8月 ）</h2><h3 id="MNO项目"><a href="#MNO项目" class="headerlink" title="MNO项目"></a>MNO项目</h3><p>我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。</p>
-<h3 id="PQR项目"><a href="#PQR项目" class="headerlink" title="PQR项目"></a>PQR项目</h3><p>我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。</p>
-<h3 id="其他项目-1"><a href="#其他项目-1" class="headerlink" title="其他项目"></a>其他项目</h3><p>（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）</p>
-<hr>
-<h1 id="开源项目和作品"><a href="#开源项目和作品" class="headerlink" title="开源项目和作品"></a>开源项目和作品</h1><p>（这一段用于放置工作以外的、可证明你的能力的材料）</p>
-<h2 id="开源项目"><a href="#开源项目" class="headerlink" title="开源项目"></a>开源项目</h2><p>（对于程序员来讲，没有什么比Show me the code能有说服力了）</p>
-<ul>
-<li><a href="http://github.com/yourname/projectname" target="_blank" rel="noopener">STU</a>：项目的简要说明，Star和Fork数多的可以注明</li>
-<li><a href="http://github.com/yourname/projectname" target="_blank" rel="noopener">WXYZ</a>：项目的简要说明，Star和Fork数多的可以注明</li>
-</ul>
-<h2 id="技术文章"><a href="#技术文章" class="headerlink" title="技术文章"></a>技术文章</h2><p>（挑选你写作或翻译的技术文章，好的文章可以从侧面证实你的表达和沟通能力，也帮助招聘方更了解你）</p>
-<ul>
-<li><a href="http://get.jobdeer.com/706.get" target="_blank" rel="noopener">一个产品经理眼中的云计算：前生今世和未来</a></li>
-<li><a href="http://get.jobdeer.com/343.get" target="_blank" rel="noopener">来自HeroKu的HTTP API 设计指南(翻译文章)</a> （ <code>好的翻译文章可以侧证你对英文技术文档的阅读能力</code>）</li>
-</ul>
-<h2 id="演讲和讲义"><a href="#演讲和讲义" class="headerlink" title="演讲和讲义"></a>演讲和讲义</h2><p>（放置你代表公司在一些技术会议上做过的演讲，以及你在公司分享时制作的讲义）</p>
-<ul>
-<li>2014架构师大会演讲：<a href="http://jobdeer.com" target="_blank" rel="noopener">如何通过Docker优化内部开发</a><ul>
-<li>9月公司内部分享：<a href="http://jobdeer.com" target="_blank" rel="noopener">云计算的前生今世</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h1><p>（我一般主张将技能清单写入到工作经历里边去。不过很难完整，所以有这么一段也不错）</p>
-<p>以下均为我熟练使用的技能</p>
-<ul>
-<li>Web开发：PHP/Hack/Node</li>
-<li>Web框架：ThinkPHP/Yaf/Yii/Lavaral/LazyPHP</li>
-<li>前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/ionic</li>
-<li>前端工具：Bower/Gulp/SaSS/LeSS/PhoneGap</li>
-<li>数据库相关：MySQL/PgSQL/PDO/SQLite</li>
-<li>版本管理、文档和自动化部署工具：Svn/Git/PHPDoc/Phing/Composer</li>
-<li>单元测试：PHPUnit/SimpleTest/Qunit</li>
-<li>云和开放平台：SAE/BAE/AWS/微博开放平台/微信应用开发</li>
-</ul>
-<h2 id="参考技能关键字"><a href="#参考技能关键字" class="headerlink" title="参考技能关键字"></a>参考技能关键字</h2><p>本技能关键字列表是从最近招聘Web前端的数百份JD中统计出来的，括号中是出现的词频。如果你的简历要投递给有机器（简历分选系统）和不如机器（不懂技术的HR）筛选简历环节的地方，请一定从下边高频关键词中选择5～10个适合你自己的。</p>
-<ul>
-<li>web(889)</li>
-<li>javascript(596)</li>
-<li>css(555)</li>
-<li>html(430)</li>
-<li>jquery(323)</li>
-<li>html5(312)</li>
-<li>js(311)</li>
-<li>ajax(196)</li>
-<li>css3(176)</li>
-<li>w3c(168)</li>
-<li>div(156)</li>
-<li>php(134)</li>
-<li>xhtml(106)</li>
-<li>java(92)</li>
-<li>ui(78)</li>
-<li>photoshop(75)</li>
-<li>dom(63)</li>
-<li>xml(56)</li>
-<li>json(54)</li>
-<li>yui(51)</li>
-<li>flash(45)</li>
-<li>bootstrap(43)</li>
-<li>python(43)</li>
-<li>http(38)</li>
-<li>dreamweaver(38)</li>
-<li>ext(33)</li>
-<li>linux(33)</li>
-<li>seo(32)</li>
-<li>prototype(29)</li>
-<li>chrome(28)</li>
-<li>pc(28)</li>
-<li>nodejs(28)</li>
-<li>firefox(26)</li>
-<li>ps(25)</li>
-<li>angularjs(25)</li>
-<li>fireworks(24)</li>
-<li>extjs(23)</li>
-<li>safari(22)</li>
-<li>www(22)</li>
-<li>mobile(22)</li>
-<li>jsp(22)</li>
-<li>mvc(22)</li>
-<li>backbone(21)</li>
-<li>node(21)</li>
-<li>ruby(20)</li>
-<li>github(19)</li>
-<li>ios(18)</li>
-<li>ie6(18)</li>
-<li>android(18)</li>
-<li>asp(18)</li>
-<li>sass(17)</li>
-<li>wap(16)</li>
-<li>mootools(16)</li>
-<li>ie(16)</li>
-<li>mysql(15)</li>
-<li>flex(14)</li>
-<li>firebug(13)</li>
-<li>bom(13)</li>
-<li>webapp(12)</li>
-<li>less(12)</li>
-<li>web2(11)</li>
-<li>angular(10)</li>
-<li>git(10)</li>
-<li>dw(10)</li>
-<li>as(10)</li>
-<li>mac(10)</li>
-<li>psd(8)</li>
-<li>o2o(7)</li>
-<li>dojo(7)</li>
-<li>actionscript3(6)</li>
-<li>grunt(5)</li>
-<li>ue(5)</li>
-<li>zepto(5)</li>
-<li>actionscript(5)</li>
-<li>ie8(5)</li>
-<li>coffeescript(5)</li>
-<li>django(4)</li>
-</ul>
-<hr>
-<h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>
-
+<li>Benefit：如果雇佣你，招聘方会得到什么好处
+        
+          <a class="article-more-a" href="/2017/11/18/web/#more">more >></a>
+        
       
 
       
@@ -462,6 +717,83 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/11/18/web/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-personblog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/18/personblog/">Hexo+Github搭建个人博客</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/18/personblog/" class="archive-article-date">
+  	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>欢迎来到我的博客驿站，本站是使用Hexo+Github基于基于Node.js的静态博客框架, 官方文档请参考 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h3><h4 id="安装Node（基础环境）"><a href="#安装Node（基础环境）" class="headerlink" title="安装Node（基础环境）"></a>安装Node（基础环境）</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node官网</a>你可以根据不同平台系统选择你需要的Node.js安装包<br>注意：Linux上安装Node.js需要安装Python 2.6 或 2.7 ，不建议安装Python 3.0以上版本。<br>
+        
+          <a class="article-more-a" href="/2017/11/18/personblog/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-Hexo Github</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/18/personblog/">展开全文 >></a>
         </p>
       
 
@@ -584,7 +916,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-interview</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">-subject</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-简历</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">-Hexo Github</a>
               </li>
             
             <div class="clearfix"></div>
