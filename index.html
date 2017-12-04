@@ -146,6 +146,264 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-cssms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/18/cssms/">CSS面试题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/18/cssms/" class="archive-article-date">
+  	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<ul>
+<li><p><a href="#2">2.CSS面试题</a></p>
+<ul>
+<li><a href="#2.1">2.1介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</a></li>
+<li><a href="#2.2">2.2CSS选择符有哪些？哪些属性可以继承？</a></li>
+<li><a href="#2.3">2.3CSS优先级算法如何计算？</a></li>
+<li><a href="#2.4">2.4CSS3新增伪类有那些？</a></li>
+<li><a href="#2.5">2.5如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？</a></li>
+<li><a href="#2.6">2.6display有哪些值？说明他们的作用。</a></li>
+<li><a href="#2.7">2.7position的值relative和absolute定位原点是？</a></li>
+<li><a href="#2.8">2.8CSS3有哪些新特性？</a></li>
+<li><a href="#2.9">2.9请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</a></li>
+<li><a href="#2.10">2.10用纯CSS创建一个三角形的原理是什么？</a></li>
+<li><a href="#2.11">2.11一个满屏 品 字布局 如何设计?</a></li>
+<li><a href="#2.12">2.12经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？</a></li>
+<li><a href="#2.13">2.13li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</a></li>
+<li><a href="#2.14">2.14为什么要初始化CSS样式,如何初始化？</a></li>
+<li><a href="#2.15">2.15absolute的containing block(容器块)计算方式跟正常流有什么不同？</a></li>
+<li><a href="#2.16">2.16CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</a></li>
+<li><a href="#2.17">2.17position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</a></li>
+<li><a href="#2.18">2.18对BFC规范(块级格式化上下文：block formatting context)的理解？</a></li>
+<li><a href="#2.19">2.19css定义的权重</a></li>
+<li><a href="#2.20">2.20请解释一下为什么会出现浮动和什么时候需要清除浮动？清除浮动的方式</a></li>
+<li><a href="#2.21">2.21移动端的布局用过媒体查询吗？</a></li>
+<li><a href="#2.22">2.22使用 CSS 预处理器吗？喜欢那个？</a></li>
+<li><a href="#2.23">2.23CSS优化、提高性能的方法有哪些？</a></li>
+<li><a href="#2.24">2.24浏览器是怎样解析CSS选择器的？</a></li>
+<li><a href="#2.25">2.25在网页中的应该使用奇数还是偶数的字体？为什么呢？</a></li>
+<li><a href="#2.26">2.26margin和padding分别适合什么场景使用？</a></li>
+<li><a href="#2.27">2.27抽离样式模块怎么写，说出思路，有无实践经验？[阿里航旅的面试题]</a></li>
+<li><a href="#2.28">2.28元素竖向的百分比设定是相对于容器的高度吗？</a></li>
+<li><a href="#2.29">2.29全屏滚动的原理是什么？用到了CSS的那些属性？</a></li>
+<li><a href="#2.30">2.30什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？</a></li>
+</ul>
+<p></p><h5 id="2.1">介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</h5><br>（1）有两种， IE 盒子模型、W3C 盒子模型；<br>（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；<br>（3）区  别： IE的content部分把 border 和 padding计算了进去;<br>   <a href="#2">回到目录</a><br> <hr><br><h5 id="2.2">CSS选择符有哪些？哪些属性可以继承？</h5><br>  1.id选择器<code>（# myid）</code><br>  2.类选择器<code>（.myclassname）</code><br>  3.标签选择器<code>（div, h1, p）</code><br>  4.相邻选择器<code>（h1 + p）</code><br>  5.子选择器<code>（ul &gt; li）</code><br>  6.后代选择器<code>（li a）</code><br>  7.通配符选择器<code>（ * ）</code><br>  8.属性选择器<code>（a[rel = &quot;external&quot;]）</code><br>  9.伪类选择器<code>（a:hover, li:nth-child）</code><p></p>
+<p> 可继承的样式：<code>font-size font-family color, UL LI DL DD DT</code>;</p>
+<p> 不可继承的样式：<code>border padding margin width height</code> ;<br>   <a href="#2">回到目录</a><br> <hr><br></p><h5 id="2.3">CSS优先级算法如何计算？</h5><br> 优先级就近原则，同权重情况下样式定义最近者为准;<p></p>
+<p> 载入样式以最后载入的定位为准;</p>
+</li>
+</ul>
+<p>优先级为:<br>   !important &gt;  id &gt; class &gt; tag<br>    important 比 内联优先级高<br>     <a href="#2">回到目录</a><br>   <hr><br> </p><h5 id="2.4">CSS3新增伪类有那些？</h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.5"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.6"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.7"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.8"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.9"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.10"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.11"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.12"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.13"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.14"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.15"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.16"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.17"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.18"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.19"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.20"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.20"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.21"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.22"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.23"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.24"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.25"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.26"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.27"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.28"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre><p>   <hr><br> </p><h5 id="2.29"></h5><p></p>
+<pre><code>[回到目录](#2)
+</code></pre>   <hr>     
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-interview</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/18/cssms/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-jsms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/18/jsms/">JavaScript面试题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/18/jsms/" class="archive-article-date">
+  	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p><em><a href="#3">3.JavaScript</a>
+ </em><a href="#3.1">3.1介绍js的基本数据类型</a><br> <em><a href="#3.2">3.2介绍js有哪些内置对象？</a>
+ </em><a href="#3.3">3.3说几条写JavaScript的基本规范？</a><br> <em><a href="#3.4">3.4JavaScript原型，原型链 ? 有什么特点？</a>
+ </em><a href="#3.5">3.5JavaScript有几种类型的值？，你能画一下他们的内存图吗？</a><br> <em><a href="#3.6">3.6Javascript如何实现继承？</a>
+ </em><a href="#3.7">3.7JavaScript继承的几种实现方式？</a><br> <em><a href="#3.8">3.8javascript创建对象的几种方式？</a>
+ </em><a href="#3.9">3.9javascript作用链域?</a><br> <em><a href="#3.10">3.10谈谈This对象的理解。</a>
+ </em><a href="#3.11">3.11eval是做什么的？</a><br> <em><a href="#3.12">3.12什么是window对象? 什么是document对象?</a>
+ </em><a href="#3.13">3.13null，undefined 的区别？</a><br> <em><a href="#3.14">3.14写一个通用的事件侦听器函数</a>
+ </em><a href="#3.15">3.15[“1”, “2”, “3”].map(parseInt) 答案是多少？</a><br> <em><a href="#3.16">3.16事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</a>
+ </em><a href="#3.17">3.17什么是闭包（closure），为什么要用它？</a><br> <em><a href="#3.18">3.18javascript 代码中的”use strict”;是什么意思 ? 使用它区别是什么？</a>
+ </em><a href="#3.19">3.19如何判断一个对象是否属于某个类？</a><br> <em><a href="#3.20">3.20new操作符具体干了什么呢?</a>
+ </em><a href="#3.21">3.21用原生JavaScript的实现过什么功能吗？</a><br> <em><a href="#3.22">3.22Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？</a>
+ </em><a href="#3.23">3.23JSON 的了解？</a><br> <em><a href="#3.24">3.24Ajax 是什么? 如何创建一个Ajax？</a>
+ </em><a href="#3.25">3.25同步和异步的区别?</a><br> <em><a href="#3.26">3.26如何解决跨域问题?</a>
+ </em><a href="#3.27">3.27页面编码和被请求的资源编码如果不一致如何处理？</a><br> <em><a href="#3.28">3.28模块化开发怎么做？</a>
+ </em><a href="#3.29">3.29AMD（Modules/Asynchronous-Definition）、CMD（Common Module Definition）规范区别？</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-interview</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/18/jsms/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-htmlms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -166,7 +424,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p></p><h2 id="ms"> 面试题</h2><p></p>
+        <a id="more"></a>
+<p></p><h2 id="ms"> 面试题</h2><p></p>
 <ul>
 <li><a href="#1">1.HTML面试题</a><ul>
 <li><a href="#1.1">1.1Doctype作用？标准模式与兼容模式各有什么区别?</a></li>
@@ -332,19 +591,19 @@ FALLBACK:
 
 
   
-    <article id="post-jsms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-personblog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/jsms/">JavaScript面试题</a>
+      <a class="article-title" href="/2017/11/18/personblog/">Hexo+Github搭建个人博客</a>
     </h1>
   
 
         
-        <a href="/2017/11/18/jsms/" class="archive-article-date">
+        <a href="/2017/11/18/personblog/" class="archive-article-date">
   	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
 </a>
         
@@ -352,100 +611,10 @@ FALLBACK:
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><em><a href="#3">3.JavaScript</a>
- </em><a href="#3.1">3.1介绍js的基本数据类型</a><br> <em><a href="#3.2">3.2介绍js有哪些内置对象？</a>
- </em><a href="#3.3">3.3说几条写JavaScript的基本规范？</a><br> <em><a href="#3.4">3.4JavaScript原型，原型链 ? 有什么特点？</a>
- </em><a href="#3.5">3.5JavaScript有几种类型的值？，你能画一下他们的内存图吗？</a><br> <em><a href="#3.6">3.6Javascript如何实现继承？</a>
- </em><a href="#3.7">3.7JavaScript继承的几种实现方式？</a><br> <em><a href="#3.8">3.8javascript创建对象的几种方式？</a>
- </em><a href="#3.9">3.9javascript作用链域?</a><br> <em><a href="#3.10">3.10谈谈This对象的理解。</a>
- </em><a href="#3.11">3.11eval是做什么的？</a><br> <em><a href="#3.12">3.12什么是window对象? 什么是document对象?</a>
- </em><a href="#3.13">3.13null，undefined 的区别？</a><br> <em><a href="#3.14">3.14写一个通用的事件侦听器函数</a>
- </em><a href="#3.15">3.15[“1”, “2”, “3”].map(parseInt) 答案是多少？</a><br> <em><a href="#3.16">3.16事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</a>
- </em><a href="#3.17">3.17什么是闭包（closure），为什么要用它？</a><br> <em><a href="#3.18">3.18javascript 代码中的”use strict”;是什么意思 ? 使用它区别是什么？</a>
- </em><a href="#3.19">3.19如何判断一个对象是否属于某个类？</a><br> <em><a href="#3.20">3.20new操作符具体干了什么呢?</a>
- </em><a href="#3.21">3.21用原生JavaScript的实现过什么功能吗？</a><br> <em><a href="#3.22">3.22Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？</a>
- </em><a href="#3.23">3.23JSON 的了解？</a><br> <em><a href="#3.24">3.24Ajax 是什么? 如何创建一个Ajax？</a>
- </em><a href="#3.25">3.25同步和异步的区别?</a><br> <em><a href="#3.26">3.26如何解决跨域问题?</a>
- </em><a href="#3.27">3.27页面编码和被请求的资源编码如果不一致如何处理？</a><br> <em><a href="#3.28">3.28模块化开发怎么做？</a>
- </em><a href="#3.29">3.29AMD（Modules/Asynchronous-Definition）、CMD（Common Module Definition）规范区别？</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-interview</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/jsms/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
+        <p>欢迎来到我的博客驿站，本站是使用Hexo+Github基于基于Node.js的静态博客框架, 官方文档请参考 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h3><h4 id="安装Node（基础环境）"><a href="#安装Node（基础环境）" class="headerlink" title="安装Node（基础环境）"></a>安装Node（基础环境）</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node官网</a>你可以根据不同平台系统选择你需要的Node.js安装包<br>注意：Linux上安装Node.js需要安装Python 2.6 或 2.7 ，不建议安装Python 3.0以上版本。<br>
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-webContent" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/webContent/">前端开发知识点</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/18/webContent/" class="archive-article-date">
-  	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="前段基本知识点"><a href="#前段基本知识点" class="headerlink" title="前段基本知识点"></a>前段基本知识点</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p> 对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5</p>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p> 布局、盒子模型、选择器优先级、Flexbox</p>
-<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><p> 数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs<br>
-        
-          <a class="article-more-a" href="/2017/11/18/webContent/#more">more >></a>
+          <a class="article-more-a" href="/2017/11/18/personblog/#more">more >></a>
         
       
 
@@ -459,7 +628,7 @@ FALLBACK:
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-subject</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-Hexo Github</a>
         		</li>
       		
 		</ul>
@@ -469,174 +638,7 @@ FALLBACK:
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/webContent/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-cssms" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/cssms/">CSS面试题</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/18/cssms/" class="archive-article-date">
-  	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p><a href="#2">2.CSS面试题</a></p>
-<ul>
-<li><a href="#2.1">2.1介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</a></li>
-<li><a href="#2.2">2.2CSS选择符有哪些？哪些属性可以继承？</a></li>
-<li><a href="#2.3">2.3CSS优先级算法如何计算？</a></li>
-<li><a href="#2.4">2.4CSS3新增伪类有那些？</a></li>
-<li><a href="#2.5">2.5如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？</a></li>
-<li><a href="#2.6">2.6display有哪些值？说明他们的作用。</a></li>
-<li><a href="#2.7">2.7position的值relative和absolute定位原点是？</a></li>
-<li><a href="#2.8">2.8CSS3有哪些新特性？</a></li>
-<li><a href="#2.9">2.9请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</a></li>
-<li><a href="#2.10">2.10用纯CSS创建一个三角形的原理是什么？</a></li>
-<li><a href="#2.11">2.11一个满屏 品 字布局 如何设计?</a></li>
-<li><a href="#2.12">2.12经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？</a></li>
-<li><a href="#2.13">2.13li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</a></li>
-<li><a href="#2.14">2.14为什么要初始化CSS样式,如何初始化？</a></li>
-<li><a href="#2.15">2.15absolute的containing block(容器块)计算方式跟正常流有什么不同？</a></li>
-<li><a href="#2.16">2.16CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</a></li>
-<li><a href="#2.17">2.17position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</a></li>
-<li><a href="#2.18">2.18对BFC规范(块级格式化上下文：block formatting context)的理解？</a></li>
-<li><a href="#2.19">2.19css定义的权重</a></li>
-<li><a href="#2.20">2.20请解释一下为什么会出现浮动和什么时候需要清除浮动？清除浮动的方式</a></li>
-<li><a href="#2.21">2.21移动端的布局用过媒体查询吗？</a></li>
-<li><a href="#2.22">2.22使用 CSS 预处理器吗？喜欢那个？</a></li>
-<li><a href="#2.23">2.23CSS优化、提高性能的方法有哪些？</a></li>
-<li><a href="#2.24">2.24浏览器是怎样解析CSS选择器的？</a></li>
-<li><a href="#2.25">2.25在网页中的应该使用奇数还是偶数的字体？为什么呢？</a></li>
-<li><a href="#2.26">2.26margin和padding分别适合什么场景使用？</a></li>
-<li><a href="#2.27">2.27抽离样式模块怎么写，说出思路，有无实践经验？[阿里航旅的面试题]</a></li>
-<li><a href="#2.28">2.28元素竖向的百分比设定是相对于容器的高度吗？</a></li>
-<li><a href="#2.29">2.29全屏滚动的原理是什么？用到了CSS的那些属性？</a></li>
-<li><a href="#2.30">2.30什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？</a></li>
-</ul>
-<p></p><h5 id="2.1">介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</h5><br>（1）有两种， IE 盒子模型、W3C 盒子模型；<br>（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；<br>（3）区  别： IE的content部分把 border 和 padding计算了进去;<br>   <a href="#2">回到目录</a><br> <hr><br><h5 id="2.2">CSS选择符有哪些？哪些属性可以继承？</h5><br>  1.id选择器<code>（# myid）</code><br>  2.类选择器<code>（.myclassname）</code><br>  3.标签选择器<code>（div, h1, p）</code><br>  4.相邻选择器<code>（h1 + p）</code><br>  5.子选择器<code>（ul &gt; li）</code><br>  6.后代选择器<code>（li a）</code><br>  7.通配符选择器<code>（ * ）</code><br>  8.属性选择器<code>（a[rel = &quot;external&quot;]）</code><br>  9.伪类选择器<code>（a:hover, li:nth-child）</code><p></p>
-<p> 可继承的样式：<code>font-size font-family color, UL LI DL DD DT</code>;</p>
-<p> 不可继承的样式：<code>border padding margin width height</code> ;<br>   <a href="#2">回到目录</a><br> <hr><br></p><h5 id="2.3">CSS优先级算法如何计算？</h5><br> 优先级就近原则，同权重情况下样式定义最近者为准;<p></p>
-<p> 载入样式以最后载入的定位为准;</p>
-</li>
-</ul>
-<p>优先级为:<br>   !important &gt;  id &gt; class &gt; tag<br>    important 比 内联优先级高<br>     <a href="#2">回到目录</a><br>   <hr><br> </p><h5 id="2.4">CSS3新增伪类有那些？</h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.5"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.6"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.7"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.8"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.9"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.10"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.11"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.12"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.13"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.14"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.15"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.16"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.17"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.18"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.19"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.20"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.20"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.21"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.22"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.23"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.24"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.25"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.26"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.27"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.28"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre><p>   <hr><br> </p><h5 id="2.29"></h5><p></p>
-<pre><code>[回到目录](#2)
-</code></pre>   <hr>     
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-interview</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/cssms/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/11/18/personblog/">展开全文 >></a>
         </p>
       
 
@@ -746,19 +748,19 @@ FALLBACK:
 
 
   
-    <article id="post-personblog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-webContent" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/personblog/">Hexo+Github搭建个人博客</a>
+      <a class="article-title" href="/2017/11/18/webContent/">前端开发知识点</a>
     </h1>
   
 
         
-        <a href="/2017/11/18/personblog/" class="archive-article-date">
+        <a href="/2017/11/18/webContent/" class="archive-article-date">
   	<time datetime="2017-11-18T02:30:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
 </a>
         
@@ -766,10 +768,11 @@ FALLBACK:
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>欢迎来到我的博客驿站，本站是使用Hexo+Github基于基于Node.js的静态博客框架, 官方文档请参考 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h3><h4 id="安装Node（基础环境）"><a href="#安装Node（基础环境）" class="headerlink" title="安装Node（基础环境）"></a>安装Node（基础环境）</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node官网</a>你可以根据不同平台系统选择你需要的Node.js安装包<br>注意：Linux上安装Node.js需要安装Python 2.6 或 2.7 ，不建议安装Python 3.0以上版本。<br>
+        <h2 id="前段基本知识点"><a href="#前段基本知识点" class="headerlink" title="前段基本知识点"></a>前段基本知识点</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p> 对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5</p>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p> 布局、盒子模型、选择器优先级、Flexbox</p>
+<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><p> 数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs<br>
         
-          <a class="article-more-a" href="/2017/11/18/personblog/#more">more >></a>
+          <a class="article-more-a" href="/2017/11/18/webContent/#more">more >></a>
         
       
 
@@ -783,7 +786,7 @@ FALLBACK:
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-Hexo Github</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-subject</a>
         		</li>
       		
 		</ul>
@@ -793,7 +796,7 @@ FALLBACK:
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/personblog/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/11/18/webContent/">展开全文 >></a>
         </p>
       
 
@@ -920,7 +923,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">-subject</a>
+                <a href="javascript:void(0)" class="js-tag color3">-Hexo Github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -928,7 +931,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">-Hexo Github</a>
+                <a href="javascript:void(0)" class="js-tag color4">-subject</a>
               </li>
             
             <div class="clearfix"></div>
